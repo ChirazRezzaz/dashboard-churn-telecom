@@ -47,7 +47,7 @@ dashboard-churn-telecom/
 
 ## Choix de conception — variables engineerées
 
-Le pipeline attend des variables créées au Projet 2 (`tenure_group`, `num_services`, `senior_isole`, `charge_par_service`) qui ne sont **pas** demandées directement dans le formulaire : elles sont **recalculées automatiquement** à partir des saisies brutes (`models/predictor.construire_ligne_entree`), en réutilisant exactement la même logique que celle utilisée à l'entraînement (`models/transforms.engineer_features`). Ce choix évite de demander à un conseiller client des informations qu'il n'a pas naturellement (ex. « quelle est votre tranche d'ancienneté ? ») et garantit la cohérence entre les données d'entraînement et les données servies en production.
+Le pipeline attend des variables créées (`tenure_group`, `num_services`, `senior_isole`, `charge_par_service`) qui ne sont **pas** demandées directement dans le formulaire : elles sont **recalculées automatiquement** à partir des saisies brutes (`models/predictor.construire_ligne_entree`), en réutilisant exactement la même logique que celle utilisée à l'entraînement (`models/transforms.engineer_features`). Ce choix évite de demander à un conseiller client des informations qu'il n'a pas naturellement (ex. « quelle est votre tranche d'ancienneté ? ») et garantit la cohérence entre les données d'entraînement et les données servies en production.
 
 ## Installation et lancement
 
